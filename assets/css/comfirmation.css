@@ -1,0 +1,37 @@
+/* confirmation.css */
+.notification {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 15px;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+  font-weight: bold;
+  animation: fadeOut 1s ease-in-out 4s forwards;
+}
+
+.success-title {
+  color: green;
+}
+
+.info-text {
+  font-size: 1.1em;
+}
+
+.button-group {
+  margin-top: 30px;
+}
+
+.button-group a {
+  margin: 10px;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+    display: none;
+  }
+}

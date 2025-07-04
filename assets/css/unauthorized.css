@@ -1,0 +1,35 @@
+.unauthorized-container {
+  text-align: center;
+  margin: 100px auto;
+  padding: 40px;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.unauthorized-container h2 {
+  color: #e74c3c;
+  margin-bottom: 20px;
+}
+
+.unauthorized-container p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #34495e;
+}
+
+.btn-retour {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-retour:hover {
+  background-color: #2980b9;
+}

@@ -1,0 +1,157 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+h2, h3 {
+    color: #0c3c78;
+    border-left: 6px solid #0c3c78;
+    padding-left: 12px;
+    margin-bottom: 20px;
+}
+
+.alert {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.alert-success {
+    background-color: #e6ffed;
+    color: #187e3e;
+    border: 1px solid #b4e2c9;
+}
+
+.alert-error {
+    background-color: #ffe6e6;
+    color: #cc0000;
+    border: 1px solid #e0b4b4;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+table th {
+    background-color: #0c3c78;
+    color: white;
+    text-align: left;
+    padding: 12px;
+}
+
+table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #eee;
+}
+
+table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-valider {
+    background-color: #28a745;
+}
+
+.btn-valider:hover {
+    background-color: #218838;
+}
+
+.btn-rejeter {
+    background-color: #dc3545;
+}
+
+.btn-rejeter:hover {
+    background-color: #c82333;
+}
+
+.documents-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #0c3c78;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+hr {
+    margin: 40px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+    .action-buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    td {
+        position: relative;
+        padding-left: 50%;
+        border-bottom: 1px solid #ddd;
+    }
+
+    td::before {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+        color: #444;
+    }
+
+    /* Ajouter les bons labels pour responsive */
+    td:nth-child(1)::before { content: "Nom"; }
+    td:nth-child(2)::before { content: "Matricule"; }
+    td:nth-child(3)::before { content: "Email"; }
+    td:nth-child(4)::before { content: "Téléphone"; }
+    td:nth-child(5)::before { content: "Pièce ID"; }
+    td:nth-child(6)::before { content: "Justificatif"; }
+    td:nth-child(7)::before { content: "Certificat"; }
+    td:nth-child(8)::before { content: "Action"; }
+    td:nth-child(9)::before { content: "Date"; }
+}

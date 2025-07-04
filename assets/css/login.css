@@ -1,0 +1,115 @@
+/* Reset général */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body structuré avec header et footer */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, #2980b9, #6dd5fa);
+}
+
+/* HEADER (déjà inclus avec header.php) */
+.main-header {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 15px 30px;
+  position: relative;
+  z-index: 10;
+}
+
+/* FOOTER */
+.main-footer {
+  width: 100%;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+/* CONTENU CENTRÉ */
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FORMULAIRE */
+.login-container {
+  background-color: #ffffff;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #34495e;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.login-container input[type="email"]:focus,
+.login-container input[type="password"]:focus {
+  border-color: #3498db;
+}
+
+.login-container button {
+  padding: 12px;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+  background-color: #2980b9;
+}
+
+/* Lien vers l'inscription */
+.login-container .lien {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.login-container .lien a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.login-container .lien a:hover {
+  text-decoration: underline;
+}
+
