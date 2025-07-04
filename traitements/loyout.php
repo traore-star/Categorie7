@@ -5,4 +5,3 @@ session_destroy();  // Détruit la session
 header("Location: ../pages/login.php"); // Redirige vers la page de connexion
 exit();
 ?>
-

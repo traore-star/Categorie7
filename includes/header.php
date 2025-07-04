@@ -20,7 +20,7 @@ $est_connecte = !empty($_SESSION['user_id']); // ou le nom que tu utilises
         <nav>
             <ul>
                 <?php if ($est_connecte): ?>
-                    <li><a href="../traitements/logout.php">Déconnexion</a></li>
+                    <li><a href="../traitements/loyout.php">Déconnexion</a></li>
                 <?php else: ?>
                     <li><a href="../pages/login.php">Connexion</a></li>
                 <?php endif; ?>
